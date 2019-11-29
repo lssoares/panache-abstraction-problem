@@ -1,13 +1,13 @@
 # panache-abstraction-problem
 Project to reproduce panache ORM problem regarding abstraction layer
 
-###Describe the bug:
+### Describe the bug:
 When implementing an abstraction over the PanacheRepositoryBase, I get the error when calling findById method:
 
 ```org.hibernate.UnknownEntityTypeException: Unable to locate persister: org.acme.base.AbstractBaseLongEntity ```
 
 
-###To Reproduce:
+### To Reproduce:
 
 
 1) clone this repo: https://github.com/lssoares/panache-abstraction-problem
@@ -16,7 +16,7 @@ When implementing an abstraction over the PanacheRepositoryBase, I get the error
 Use swagger to execute the following webservice: http://0.0.0.0:8080/example/1
 
 
-###Other observations:
+### Other observations:
 
 
 1) Executing the other webservice http://0.0.0.0:8080/example is OK:
