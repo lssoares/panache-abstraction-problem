@@ -37,7 +37,14 @@ public class ExampleResource {
     @Path("")
     public Response list() {
 
-        return Response.ok(exampleRepository.findAll().list()).build();
+        return Response.ok(exampleRepository.listAll()).build();
+    }
+
+    @GET
+    @Path("/empty")
+    public Response listEmpty() {
+
+        return Response.ok(exampleRepository.listEmpty()).build();
     }
 
 }
